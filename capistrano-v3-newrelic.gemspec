@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.date = "2014-05-29"
   s.description = "Capistrano v3 task for New Relic notification about deployment"
   s.email = ["antropov.ivan@gmail.com"]
-  s.extra_rdoc_files = [ "LICENSE.txt", "README.rdoc" ]
+  s.extra_rdoc_files = [ "README.md" ]
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.licenses = ["MIT"]
@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency("capistrano-rails")
   s.add_dependency("capistrano-rbenv", "~> 2.0")
   s.add_dependency("newrelic_rpm", ">= 3.7.0")
+  s.add_dependency("activesupport")
 
   s.add_development_dependency("bundler")
   s.add_development_dependency("rake")
